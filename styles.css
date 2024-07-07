@@ -1,0 +1,490 @@
+/* Reset and General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: url("img/imani-bahati-LxVxPA1LOVM-unsplash.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff3d2e;
+}
+
+/* Smooth Scroll Animation */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Features Section */
+
+.features {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature i {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Discounts Section */
+
+.discounts {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.discounts h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.discount-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.discount {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.discount:hover {
+  transform: translateY(-10px);
+}
+
+.discount img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.discount h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.shop-now {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+  background-color: #ff3d2e;
+}
+
+/* Products Section */
+
+.products {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #ff3d2e;
+}
+
+/* Testimonials Section */
+
+/* Testimonials Section */
+
+.testimonials {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url("img/eric-nopanen-72eYgGJVzQM-unsplash.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff; /* Ensuring the text is readable on the background */
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: rgba(244, 244, 244, 0.8); /* Adding transparency */
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Newsletter Section */
+
+.newsletter {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+#subscribe-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+#subscribe-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#subscribe-form button:hover {
+  background-color: #ff3d2e;
+}
+
+/* Blog Section */
+
+.blog {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  margin: 20px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-10px);
+}
+
+.blog-post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-post h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #ff6f61;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Footer */
+
+/* Footer */
+
+footer {
+  position: relative;
+  background-image: url("img/shlomi-platzman-VF0dgmBSf9Q-unsplash.webp");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  z-index: 1;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Adjust the transparency as needed */
+  z-index: -1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.footer-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li,
+.footer-section a {
+  font-size: 1em;
+}
+
+.footer-section a {
+  color: #ff6f61; /* Adjust the link color for better visibility */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-color {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Animations */
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
